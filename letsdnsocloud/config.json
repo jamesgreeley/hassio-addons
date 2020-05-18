@@ -18,6 +18,7 @@
 		"cfemail": "CloudFlare Email",
 		"domains": ["sub.example.com"],
 		"seconds": 300
+		"proxy": false,
 	},
 	"schema": {
 		"lets_encrypt": {
@@ -29,5 +30,6 @@
 		"cfemail": "email",
 		"domains": ["str"],
 		"seconds": "int"
+		"proxy": "bool",
 	}
 }
