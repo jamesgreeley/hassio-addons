@@ -18,6 +18,7 @@ export CF_EMAIL=$(jq --raw-output '.cfemail' $CONFIG_PATH)
 #-------
 DOMAINS=$(jq --raw-output '.domains | join(",")' $CONFIG_PATH)
 WAIT_TIME=$(jq --raw-output '.seconds' $CONFIG_PATH)
+PROXY=$(jq --raw-output '.proxy' $CONFIG_PATH)
 
 #Extract Zone ID for Domain
 grabzoneid
