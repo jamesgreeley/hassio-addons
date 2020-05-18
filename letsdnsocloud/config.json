@@ -17,8 +17,8 @@
 		"cfapikey": "CloudFlare API Key",
 		"cfemail": "CloudFlare Email",
 		"domains": ["sub.example.com"],
-		"seconds": 300
-		"proxy": false,
+		"seconds": 300,
+		"proxy": false
 	},
 	"schema": {
 		"lets_encrypt": {
@@ -29,7 +29,7 @@
 		"cfapikey": "str",
 		"cfemail": "email",
 		"domains": ["str"],
-		"seconds": "int"
-		"proxy": "bool",
+		"seconds": "int",
+		"proxy": "bool"
 	}
 }
