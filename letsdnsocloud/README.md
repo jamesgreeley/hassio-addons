@@ -36,7 +36,20 @@ Use a custom domain with Let's Encrypt on Hass.io without having to open any por
   - Install plugin using /addons directory or GIT
   - Edit config with your CloudFlare Global API Key, your CloudFlare email address and domain.
   - Hit start and wait for it to create the certificates.
-
+  
+  Example config
+```
+lets_encrypt:
+  accept_terms: true
+  certfile: fullchain.pem
+  keyfile: privkey.pem
+cfapikey: XXX
+cfemail: user@example.com
+domains:
+  - example.example.com
+seconds: 300
+proxy: false
+```
 ### 4. Homeassistant config
   - Add the following to your configuration.yaml:
 ```
