@@ -45,6 +45,6 @@ function updateip() {
     -H "Content-Type: application/json"\
     --data '{"type":"A","name":"'$LE_DOMAINS'","content":"'$1'","proxied":"'$proxy'"}' -o /dev/null
 
-  echo "Updated $LE_DOMAINS with IP: $1"
+  echo "Updated $LE_DOMAINS with IP: $1 and proxy setting $proxy"
 
 }
